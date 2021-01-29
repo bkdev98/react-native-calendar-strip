@@ -469,8 +469,8 @@ class CalendarDay extends Component {
             style={[
               styles.dateContainer,
               responsiveDateContainerStyle,
+              dayContainerStyle,
               _dateViewStyle,
-              dayContainerStyle
             ]}
           >
             {showDayName && (
