@@ -37,8 +37,8 @@ export default class CalendarScroller extends Component {
     this.timeoutResetPositionId = null;
 
     this.updateLayout = renderDayParams => {
-      const itemHeight = renderDayParams.size;
-      const itemWidth = itemHeight + renderDayParams.marginHorizontal * 2;
+      const itemHeight = renderDayParams.dayComponentHeight || renderDayParams.size;
+      const itemWidth = renderDayParams.size + renderDayParams.marginHorizontal * 2;
 
       const layoutProvider = new LayoutProvider(
         index => 0, // only 1 view type
