@@ -41,6 +41,7 @@ interface IDayComponentProps {
   dateNameStyle?: string;
   dateNumberStyle?: string;
   dayContainerStyle?: StyleProp<ViewStyle>;
+  dayComponentHeight?: number;
   weekendDateNameStyle?: TextStyle;
   weekendDateNumberStyle?: TextStyle;
   highlightDateContainerStyle?: StyleProp<ViewStyle>;
@@ -124,6 +125,8 @@ interface CalendarStripProps {
 
   dateNameStyle?: StyleProp<TextStyle>;
   dateNumberStyle?: StyleProp<TextStyle>;
+  dayContainerStyle?: StyleProp<ViewStyle>;
+  dayComponentHeight?: number;
   weekendDateNameStyle?: StyleProp<TextStyle>;
   weekendDateNumberStyle?: StyleProp<TextStyle>;
   highlightDateContainerStyle?: StyleProp<ViewStyle>;
