@@ -68,6 +68,7 @@ class CalendarStrip extends Component {
     calendarHeaderStyle: PropTypes.any,
     calendarHeaderFormat: PropTypes.string,
     calendarHeaderPosition: PropTypes.oneOf(["above", "below"]),
+    renderCustomHeader: PropTypes.func,
 
     calendarAnimation: PropTypes.object,
     daySelectionAnimation: PropTypes.object,
@@ -531,6 +532,7 @@ class CalendarStrip extends Component {
         calendarHeaderFormat={this.props.calendarHeaderFormat}
         calendarHeaderContainerStyle={this.props.calendarHeaderContainerStyle}
         calendarHeaderStyle={this.props.calendarHeaderStyle}
+        renderCustomHeader={this.props.renderCustomHeader}
         onHeaderSelected={this.props.onHeaderSelected}
         weekStartDate={this.state.weekStartDate}
         weekEndDate={this.state.weekEndDate}

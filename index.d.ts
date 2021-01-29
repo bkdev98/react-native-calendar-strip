@@ -112,6 +112,7 @@ interface CalendarStripProps {
   calendarHeaderStyle?: StyleProp<TextStyle>;
   calendarHeaderFormat?: string;
   calendarHeaderPosition?: "below" | "above";
+  renderCustomHeader?: (text: string, style: any) => any;
 
   calendarAnimation?: {
     duration: number;
