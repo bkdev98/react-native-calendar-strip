@@ -383,7 +383,7 @@ class CalendarStrip extends Component {
     let monthFontSize = Math.round(dayComponentWidth / 3.2);
     let selectorSize = Math.round(dayComponentWidth / 2.5);
     let height = showMonth ? monthFontSize : 0;
-    height += showDate ? dayComponentHeight || dayComponentWidth : 0; // assume square element sizes
+    height += showDate ? (dayComponentHeight || dayComponentWidth) : 0;
     selectorSize = Math.min(selectorSize, height);
 
     this.setState({

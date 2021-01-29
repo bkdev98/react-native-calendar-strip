@@ -82,7 +82,10 @@ export default class CalendarScroller extends Component {
     let newState = {};
     let updateState = false;
 
-    if (this.props.renderDayParams.size !== prevProps.renderDayParams.size) {
+    if (
+      this.props.renderDayParams.size !== prevProps.renderDayParams.size
+      || this.props.renderDayParams.dayComponentHeight !== prevProps.renderDayParams.dayComponentHeight
+    ) {
       updateState = true;
       newState = this.updateLayout(this.props.renderDayParams);
     }
